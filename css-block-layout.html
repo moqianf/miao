@@ -50,23 +50,32 @@
     ul.product li:nth-child(4n + 5) {
       margin-top: -220px;
     }
+
     ul.bbc {
-      padding: 0%;
+      padding: 0;
+      width: 640px;
+      margin: auto;
       list-style: none;
-      font-size: 150px;
-      line-height: 0px;
+      font-size: 0;
     }
-    ul.bbc li{
-      box-sizing: border-box;
+    ul.bbc li {
+      display: inline-block;
+      line-height: 37px;
       border: 3px solid black;
+      margin: 7.5px 15px;
+      width: 180px;
+      box-sizing: border-box;
       text-align: center;
-      line-height: 34px;
+      font-size: 16px;
       background-color: pink;
-      display:inline;
-      padding: 0 65px;
-      line-height: 0px;
-      font-size: 17px;
     }
+    ul.bbc li:hover {
+      background-color: red;
+    }
+    ul.bbc:nth-child(3n + 1) {
+      margin-left: -15px;
+    }
+
     ul.table {
       margin: auto;
       padding: 0;
@@ -110,6 +119,7 @@
       <li>产品</li>
       <li>产品</li>
     </ul>
+    <div class="b">
     <ul class="bbc">
       <li>产品</li>
       <li>产品</li>
@@ -124,6 +134,7 @@
       <li>产品</li>
       <li>产品</li>
     </ul>
+    </div>
     <ul class="table">
       <li>link</li>
       <li>link</li>
