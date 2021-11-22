@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    <meta charset="UTF-8">
+    <title>菜单栏</title>
+    <style>
+      html , body , ul , li {
+        margin: 0;
+      }
+
+      ul, li {
+          list-style: none;
+      }
+      div {
+        width: 100%;
+        height: 30px;
+        box-sizing: border-box;
+        background-color: blue;
+      }
+      ul.b {
+        display: flex;
+        line-height: 34px;
+      }
+      li.a {
+        position: relative;
+        color: white;
+      }
+      ul.a {
+        position: absolute;
+        background-color:yellow;
+        text-align: center;
+
+        display: none;
+        color: red;
+        margin-right: -100px;
+        margin-top: 30px;
+        margin-left: -70px;
+      }
+      ul.a li {
+        margin: auto;
+        line-height: 30px;
+
+      }
+      li.a:hover > ul.a {
+        display: inline-block;
+      }
+      li.b {
+        margin-left: 20px;
+        color: white;
+      }
+      li.c {
+        margin-left: 20px;
+        color: white
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <ul class="b">
+        <li class="a">
+          出发城市
+          <ul class="a">
+            <li>南京</li>
+            <li>苏州</li>
+            <li>上海</li>
+          </ul>
+          <li class="b">
+            飞机行程
+          </li>
+          <li class="c">
+            酒店账单
+          </li>
+        </li>
+      </ul>
+    </div>
+  </body>
+  </html>
