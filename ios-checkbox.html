@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>JS Bin</title>
+    <style>
+
+      div {
+        width: 320px;
+        height: 180px;
+        margin: auto;
+        margin-top: 200px;
+        border: 2px solid black;
+        border-radius: 100px;
+        position: relative;
+      }
+      label {
+        position: absolute;
+        background-color: white;
+        width: 170px;
+        height: 170px;
+        border: 2px solid black;
+        border-radius: 100px;
+        top: 3px;
+        display: inline-block;
+      }
+      input:checked + div > label {
+        margin-left: 147px;
+        transition: 0.2s linear;
+
+      }
+      input:checked + div {
+        background-color: greenyellow;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="checkbox" name="aaa" id="move" hidden>
+    <div>
+      <label for="move"></label>
+    </div>
+  </body>
+</html>
+

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<body>
+  <!DOCTYPE html>
+<html>
+  <head lang="en">
+  <meta charset="UTF-8">
+  <title>菜单栏</title>
+  <style>
+    * {
+      background-color: rgba(0,0,0,0.08);
+      box-shadow: inset 0 0 1px red;
+    }
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+   .one > li {
+     display: inline-block;
+    }
+    .one li {
+      position: relative;
+    }
+    .one li:hover {
+     background-color: skyblue;
+    }
+    .one ul {
+      display: none;
+      position: absolute;
+    }
+    li:hover > ul {
+      display: block;
+    }
+    ul ul ul {
+      left: 100%;
+      top: 0;
+    }
+  </style>
+  </head>
+  <body>
+    <ul class="one">
+      <li>
+          出发城市
+        <ul>
+          <li>北京</li>
+            <ul>
+              <li>一环</li>
+              <li>二环</li>
+              <li>三环</li>
+            </ul>
+          <li>南京</li>
+          <li>上海</li>
+        </ul>
+      </li>
+      <li>
+        出发时间
+        <ul>
+          <li>以前</li>
+          <li>现在</li>
+          <li>未来</li>
+        </ul>
+      <li>
+        目的地城市
+        <ul>
+          <li>天津</li>
+          <li>东京</li>
+          <li>上海</li>
+        </ul>
+      </li>
+    </ul>
+</body>
+</html
