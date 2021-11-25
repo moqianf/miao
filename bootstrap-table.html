@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>JS Bin</title>
+    <style type="text/scss">
+      .table {
+      width: 600px;
+      border-collapse: collapse;
+      thead {
+        border-bottom: 2px solid #212529;
+      }
+      tr {
+        border-bottom: 1px solid #DEE2E6;
+      }
+      td, th {
+        text-align: left;
+        padding: 10px;
+      }
+      &.table-striped {
+        tbody tr:nth-child(odd) {
+        background-color: #f2f2f2;
+        }
+      }
+      &.table-hover {
+        tbody tr:hover {
+      background-color: #ECECEC;
+        }
+      }
+      &.table-bordered {
+        td, th {
+      border: 1px solid #DEE2E6;
+        }
+      }
+      $.table-borderless {
+        td, th {
+          border: none;
+        }
+      &.table-sm {
+        th, td {
+      padding: 0.25em;
+        }
+      }
+    }
+    </style>
+  </head>
+  <body>
+    <table  class="table table-dark table-striped table-hover table-bordered table-borderless table-sm">
+      <colgroup span="4" width="100">
+        <col width="50">
+        <col width="150">
+        <col width="250">
+        <col width="200">
+      </colgroup>
+      <thead>
+        <tr>
+          <th scope="col"> # </th>
+          <th scope="col">First</th>
+          <th scope="col">Last</th>
+          <th scope="col">Handle</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Mark</td>
+          <td>Otto</td>
+          <td>@mdo</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Jacob</td>
+          <td>Thornton</td>
+          <td>@fat</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td colspan="2">Larry the Bird</td>
+          <td>@twitter</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+  <script src="sass.link.min.js"></script>
+  <script src="less.min.js"></script>
+</html>
+
