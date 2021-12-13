@@ -9,14 +9,77 @@
       background-color: rgba(0,0,0,0.08);
       box-shadow: inset 0 0 1px red;
       }
-      <form action="">
-            <button>搜</button>
-            <input type="text" value="" name="goods" placeholder="净水器">
-          </form>
     </style>
   </head>
   <body>
   </body>
   <script src="/less+sass/sass.link.min.js"></script>
 </html>
-
+.span2 {
+  width: calc(100% - 248px);
+  height: 614px;
+  float: right;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: absolute;
+  left: 248px;
+  div {
+    width: 234px;
+    height: 300px;
+    background-color: #fff;
+    transition: .2s linear;
+     a {
+     display: block;
+     width: 100%;
+     line-height: calc(100% -40px);
+     text-align: center;
+     margin-top: 20px;
+     background-color: #fff;
+       img {
+         display: block;
+         width: 160px;
+         height: 160px;
+         line-height: 160px;
+         margin: auto;
+         margin-bottom: 18px;
+       }
+       h3 {
+         width: 214px;
+         height: 20px;
+         text-align: center;
+         margin: auto;
+         font-size: 14px;
+         font-weight: 400;
+         color: #333;
+         background-color: #fff;
+       }
+       p {
+         width: 214px;
+         height: 18px;
+         text-align: center;
+         margin: auto;
+         margin-top: 0px;
+         margin-bottom: 10px;
+         font-size: 12px;
+         color: #b0b0b0;
+         background-color: #fff;
+       }
+       span {
+         color: #ff6700;
+         background-color: #fff;
+       }
+       del {
+         margin-left: .5em;
+         color: #b0b0b0;
+         span {
+           color: #b0b0b0;
+         }
+       }
+     }
+     &:hover {
+      box-shadow: 0 15px 30px rgba(0,0, 0, 0.1);
+      transform: translate3d(0,-2px,0);
+     }
+   }
+ }
