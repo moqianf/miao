@@ -18,7 +18,7 @@
   var a = Number(prompt('your age','1'))
   var b = Number(prompt('your age','1'))
   var c = Number(prompt('your age','3'))
-  console.log((a + b)/c)
+  console.log(parseInt((a + b)/c))
 
 </script>
 <script id="ch0103/04">
@@ -40,9 +40,9 @@
 </script>
 <script id="ch0103/06">
 
-  var a = Number(prompt('your age','60'))
-  var b = Number(prompt('your age','10433'))
-  var x = (a / b * 10000) /100
+  var a = Number(prompt('your age','10433'))
+  var b = Number(prompt('your age','60'))
+  var x = ( b / a * 10000) /100
   console.log(x.toFixed(3)+"%")
 
 </script>
@@ -97,20 +97,21 @@ console.log((a % b).toFixed(4))
 </script>
 <script id="ch0103/13">
 
-  var x = Number(prompt('your age','256'))
+  var x = Number(prompt('your age','100'))
   var a = (x % 10)
   var a1 = (x % 10) *100
   var b = (x % 100) - a
   var c = (x - x % 100)/100
-  console.log( a1 + b + c)
+  console.log( a1 +"" + b +"" + c)
 
 </script>
 <script id="ch0103/14">
 
-var r = Number(prompt('your age','11'))
 var h = Number(prompt('your age','23'))
+var r = Number(prompt('your age','11'))
 var S = h * (3.14 * (r * r))
 console.log( (20000 / S + 1).toFixed(0) )
+
 </script>
 
 <script id="ch0103/15">
