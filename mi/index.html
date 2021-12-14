@@ -666,6 +666,33 @@
         margin-top: 0;
         position: relative;
         overflow: hidden;
+        .box-bd {
+          width: 100%;
+          position: absolute;
+          bottom: 0;
+          height: calc(100% - 58px);
+            .span1 {
+              width: 234px;
+              height: 614px;
+              float: left;
+              margin-right: 14px;
+              a {
+                display: block;
+                width: 100%;
+                height:100%;
+                transition: .2s linear;
+                img {
+                  display: block;
+                  width: 100%;
+                  height: 100%；
+                }
+                &:hover {
+                  box-shadow: 0 15px 30px rgba(0,0, 0, 0.1);
+                  transform: translate3d(0,-2px,0);
+                }
+              }
+            }
+          }
           .box-hd {
           width: 1226px;
           height: 58px;
@@ -692,11 +719,11 @@
                 padding: 0px;
                 justify-content: flex-end;
                 .tab-active-one {
+                  width: 92px;
                   display: inline-block;
                   font-size: 16px;
-                  line-height: 26px;
-                  margin: auto;
-                  padding: 0px;
+                  line-height: 58px;
+                  text-align: center;
                   cursor:pointer;
                   .span2 {
                     width: 978px;
@@ -708,7 +735,7 @@
                     justify-content: space-between;
                     flex-wrap: wrap;
                     align-content: space-between;
-                    z-index: 50;
+                    z-index: 10;
                       li.a {
                       width: 234px;
                       height: 300px;
@@ -783,7 +810,7 @@
                 .tab-active {
                   display: inline-block;
                   font-size: 16px;
-                  line-height: 26px;
+                  line-height: 58px;
                   margin: auto;
                   cursor:pointer;
                   margin-right: 0;
@@ -795,7 +822,7 @@
                       position: absolute;
                       right: 0px;
                       top: 58px;
-                      z-index: 100;
+                      z-index: 200;
                       li.b {
                         float: left;
                         width: 234px;
@@ -874,36 +901,10 @@
               }
             }
          }
-          .box-bd {
-          width: 100%;
-          position: absolute;
-          bottom: 0;
-          height: calc(100% - 58px);
-            .span1 {
-              width: 234px;
-              height: 614px;
-              float: left;
-              margin-right: 14px;
-              a {
-                display: block;
-                width: 100%;
-                height:100%;
-                transition: .2s linear;
-                img {
-                  display: block;
-                  width: 100%;
-                  height: 100%；
-                }
-                &:hover {
-                  box-shadow: 0 15px 30px rgba(0,0, 0, 0.1);
-                  transform: translate3d(0,-2px,0);
-                }
-              }
-            }
-          }
       }
       .more-list > li:first-child > ul {
         visibility: visible;
+        transform: none;
       }
       .more-list:hover > li {
         border-bottom: none;
@@ -930,6 +931,7 @@
       visibility:hidden;
       transition: 0s 9999s;
      }
+
   </style>
 </head>
 <body>
