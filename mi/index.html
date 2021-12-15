@@ -56,6 +56,18 @@
               display: inline-block;
               text-align: center;
               width: 120px;
+              li.fa-shopping-cart {
+              width: 16px;
+              height: 16px;
+              font-family: "iconfont" !important;
+              font-size: 16px;
+              font-style: normal;
+              -webkit-font-smoothing: antialiased;
+              @font-face {
+                font-family: iconfont;
+                src:url('mi.woff');
+              }
+              }
             }
            .shopping-cart-list {
             position: absolute;
@@ -69,6 +81,7 @@
             overflow: hidden;
             line-height: 100px;
             z-index: 31;
+            box-shadow: 0 15px 30px rgba(0 ,0 ,0 , 0.1);
             }
             :hover {
               color: #ff6700;
@@ -388,7 +401,7 @@
           &:nth-child(2):checked ~ .indicators:nth-child(2) label,
           &:nth-child(3):checked ~ .indicators:nth-child(3) label,
           &:nth-child(4):checked ~ .indicators:nth-child(4) label {
-            background-color: hsla(0,0%,100%,.4);
+            color: hsla(0,0%,100%,.4);
           }
         }
         .slides {
@@ -410,13 +423,15 @@
               position: absolute;
               top: 0;
               bottom: 0;
-              width: 300px;
+              width: 41px;
               margin: auto;
-              height: 70px;
+              height: 69px;
               line-height: 70px;
               font-size: 16px;
-              z-index: 30;
               cursor: pointer;
+              background-image: url(/image/icon-slides.png);
+              background-position:-125px 50%;
+              background-repeat: no-repeat;
               &:first-child {
                 left: 232px;
               }
@@ -424,16 +439,18 @@
                 right: 0;
               }
             }
-            .left {
-                background-image: url(/image/icon-slides.png);
-                background-repeat: no-repeat;
-                background-position: left;
+            .swiper-button-prev {
+              background-position:-85px 50%;
+              &:hover {
+                background-position: 0px 50%;
               }
-              .right {
-                background-image: url(/image/icon-slides.png);
-                background-repeat: no-repeat;
-                background-position: right ;
+              }
+              .swiper-button-next {
+                background-position:-125px 50%;
                 width: 41px;
+                &:hover {
+                background-position: -42px 50%;
+              }
               }
           }
         }
@@ -966,7 +983,9 @@
         <span class="sep">|</span>
         <a href="#">Select Location</a>
         <div class="shopping">
-          <a href="#" class="shopping-cart">购物车(0)</a>
+          <a href="#" class="shopping-cart">
+            <i class="fa-shopping-cart"></i>
+            购物车(0)</a>
           <div class="shopping-cart-list">购物车中还没有商品，赶紧选购吧！</div>
         </div>
         <div class="top-nav-right">
@@ -1907,30 +1926,30 @@
           <input type="radio" name="slider1" id="i4">
           <div class="slides">
             <div class="slide">
-              <label for="i4">
+              <label for="i4" class="swiper-button-prev">
               </label>
-              <label for="i2">
+              <label for="i2" class="swiper-button-next">
               </label>
               <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/0ce57203f1618c7554d8a22f92e18446.jpg?w=2452&h=920" alt="">
             </div>
             <div class="slide">
-              <label for="i1">
+              <label for="i1" class="swiper-button-prev">
               </label>
-              <label for="i3">
+              <label for="i3" class="swiper-button-next">
               </label>
               <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/19f12ce5a1770c2a23188f1055258967.jpg?thumb=1&w=1533&h=575&f=webp&q=90" alt="">
             </div>
             <div class="slide">
-              <label for="i2">
+              <label for="i2" class="swiper-button-prev">
               </label>
-              <label for="i4">
+              <label for="i4" class="swiper-button-next">
               </label>
               <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/918820682e4a490221cfd92b24c14b86.jpg?thumb=1&w=1533&h=575&f=webp&q=90" alt="">
             </div>
             <div class="slide">
-              <label for="i3">
+              <label for="i3" class="swiper-button-prev">
               </label>
-              <label for="i1">
+              <label for="i1" class="swiper-button-next">
               </label>
               <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/6c149e20d569b96c0a99f62e5108ad29.jpg?thumb=1&w=1533&h=575&f=webp&q=90" alt="">
             </div>
