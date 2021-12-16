@@ -14,14 +14,25 @@
         padding: 0;
         overflow-y: scroll;
         background: #f5f5f5;
-        font: 14px/1.5 Helvetica Neue,Helvetica,Arial,Microsoft Yahei,Hiragino Sans GB,Heiti SC,WenQuanYi Micro Hei,sans-serif;
+        font: 14px/1.5 Helvetica Neue,Helvetica,Arial,Microsoft Yahei,Hiragino Sans GB,Heiti SC,WenQuanYi Micro Hei,sans-serif,iconfont;
       }
 
       a {
         text-decoration: none;
         color: #000;
       }
-
+      /* 图标 */
+      @font-face {
+        font-family: iconfont;
+        src:url('mi.woff');
+      }
+      [icon] {
+        font-family: iconfont;
+        font-style: normal;
+      }
+      [icon="fa-shopping-cart"]::before {
+        content: '';
+      }
       .site-nav {
         height: 40px;
         background-color: #333;
@@ -63,10 +74,6 @@
               font-size: 16px;
               font-style: normal;
               -webkit-font-smoothing: antialiased;
-              @font-face {
-                font-family: iconfont;
-                src:url('mi.woff');
-              }
               }
             }
            .shopping-cart-list {
@@ -984,7 +991,7 @@
         <a href="#">Select Location</a>
         <div class="shopping">
           <a href="#" class="shopping-cart">
-            <i class="fa-shopping-cart"></i>
+            <i icon="fa-shopping-cart"></i>
             购物车(0)</a>
           <div class="shopping-cart-list">购物车中还没有商品，赶紧选购吧！</div>
         </div>
