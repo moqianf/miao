@@ -372,53 +372,53 @@
 </script>
 
 <script id="ch0104/19">
-var a = Number(prompt())
-var b = Number(prompt())
-var c = prompt()
-if (c = '+') {
-  console.log(a + b)
-} else if (c = '-') {
-  console.log(a - b)
-} else if (c = '*') {
-  console.log(a * b)
-} else if (c = '/') {
-  if (a / b == 0) {
-    console.log('Divided by zero!')
+  var a = Number(prompt())
+  var b = Number(prompt())
+  var c = prompt()
+  if (c = '+') {
+    console.log(a + b)
+  } else if (c = '-') {
+    console.log(a - b)
+  } else if (c = '*') {
+    console.log(a * b)
+  } else if (c = '/') {
+    if (a / b == 0) {
+      console.log('Divided by zero!')
+    } else {
+      console.log( a / b )
+    }
   } else {
-    console.log( a / b )
+    console.log( 'Invalid operator!' )
   }
-} else {
-  console.log( 'Invalid operator!' )
-}
 </script>
 
 <script id="ch0104/20">
-debugger
-var a = Number(prompt())
-var b = Number(prompt())
-var c = Number(prompt())
-var delta = b * b -4 * a * c
-if (delta == 0) {
-  var x = (-b)/(2*a)
-  console.log('x1=x2=' + x.toFixed(5))
-  console.log('x1='+x1.toFixed(5) +';'+'x2='+x2.toFixed(5))
-} else if (delta > 0) {
-  var x1 = (-b + sqrtDelta)/(2*a)
-  var x2 = (-b - sqrtDelta)/(2*a)
-  console.log('x1='+x1.toFixed(5) +';'+'x2='+x2.toFixed(5))
-} else if (delta < 0) {
-  var sDelta = Math.sqrt(-delta)
-  var m1 = -b / (2 * a)
-  var m2 = sDelta / (2 * a)
-  if (m2 < 0) {
-  var x1 = m1.toFixed(5) + '-' + m2.toFixed(5)+'i'
-  var x2 = m1.toFixed(5) + m2.toFixed(5)+'i'
-  } else {
-    var x1 = m1.toFixed(5) + '+' + m2.toFixed(5)+'i'
-  var x2 = m1.toFixed(5) + '-' + m2.toFixed(5)+'i'
+  debugger
+  var a = Number(prompt())
+  var b = Number(prompt())
+  var c = Number(prompt())
+  var delta = b * b -4 * a * c
+  if (delta == 0) {
+    var x = (-b)/(2*a)
+    console.log('x1=x2=' + x.toFixed(5))
+    console.log('x1='+x1.toFixed(5) +';'+'x2='+x2.toFixed(5))
+  } else if (delta > 0) {
+    var x1 = (-b + sqrtDelta)/(2*a)
+    var x2 = (-b - sqrtDelta)/(2*a)
+    console.log('x1='+x1.toFixed(5) +';'+'x2='+x2.toFixed(5))
+  } else if (delta < 0) {
+    var sDelta = Math.sqrt(-delta)
+    var m1 = -b / (2 * a)
+    var m2 = sDelta / (2 * a)
+    if (m2 < 0) {
+    var x1 = m1.toFixed(5) + '-' + m2.toFixed(5)+'i'
+    var x2 = m1.toFixed(5) + m2.toFixed(5)+'i'
+    } else {
+      var x1 = m1.toFixed(5) + '+' + m2.toFixed(5)+'i'
+    var x2 = m1.toFixed(5) + '-' + m2.toFixed(5)+'i'
+    }
+    console.log('x1='+ x1 + ';x2=' +x2)
   }
-  console.log('x1='+ x1 + ';x2=' +x2)
-}
 </script>
 
 <script id="ch0104/21">
@@ -452,35 +452,35 @@ if (delta == 0) {
 </script>
 
 <script id="ch0105/03">
-var n = Number(prompt())
-var result = 0
-var average
-for ( var counter = 0; counter < n ; counter = counter + 1)
-    result=result + Number(prompt())
-    average=(result / n).toFixed(4)
-    console.log(average)
+  var n = Number(prompt())
+  var result = 0
+  var average
+  for ( var counter = 0; counter < n ; counter = counter + 1)
+      result=result + Number(prompt())
+      average=(result / n).toFixed(4)
+      console.log(average)
 </script>
 
 <script id="ch0105/04">
-var n = Number(prompt())
-var result = 0
-for ( var counter = 0; counter < n ; counter = counter + 1 )
-    result=result + Number(prompt())
-    console.log(result)
-    average=(result / n).toFixed(5)
-    console.log(average)
+  var n = Number(prompt())
+  var result = 0
+  for ( var counter = 0; counter < n ; counter = counter + 1 )
+      result=result + Number(prompt())
+      console.log(result)
+      average=(result / n).toFixed(5)
+      console.log(average)
 </script>
 
 <script id="ch0105/05">
-var n = Number(prompt())
-var max = 0
-for ( var counter = 0; counter < n ; counter += 1 ) {
-    result = Number(prompt())
-    if (max <= result) {
-      max = result
-    }
-}
-   console.log(max)
+  var n = Number(prompt())
+  var max = 0
+  for ( var counter = 0; counter < n ; counter += 1 ) {
+      result = Number(prompt())
+      if (max <= result) {
+        max = result
+      }
+  }
+    console.log(max)
 </script>
 
 <script id="ch0105/06">
@@ -500,7 +500,7 @@ for ( var counter = 0; counter < n ; counter += 1 ) {
   }   while (counter < n)
   console.log(max - min)
 </script>
-//TODO
+
 <script id="ch0105/07">
   var n = Number(prompt())
   var a = 0
@@ -595,14 +595,14 @@ for ( var counter = 0; counter < n ; counter += 1 ) {
 </script>
 
 <script id="ch0105/14">
-var x = (Number(prompt()))
-var n = (Number(prompt()))
-result = x
-for  (var counter = 0; counter < n; counter += 1) {
-  result = result + result * 0.001
-}
-  var result1 = result.toFixed(4)
-  console.log(result1)
+  var x = (Number(prompt()))
+  var n = (Number(prompt()))
+  result = x
+  for  (var counter = 0; counter < n; counter += 1) {
+    result = result + result * 0.001
+  }
+    var result1 = result.toFixed(4)
+    console.log(result1)
 </script>
 
 <script id="ch0105/15">
@@ -619,23 +619,23 @@ for  (var counter = 0; counter < n; counter += 1) {
 </script>
 
 <script id="ch0105/16">
-var N = (Number(prompt()))
-var k = (Number(prompt()))
-var sum = 0
-var houseprice = 200
-var buyed = false
-for (var i = 1 ; i <= 20 ; i++ ) {
-    sum += N
-    if (sum >= houseprice) {
-      console.log(i)
-      break
-      buyed = true
-    }
-    houseprice = houseprice  * (1 + k / 100)
-}
-if (!buyed) {
-  console.log('Impossible')
-}
+  var N = (Number(prompt()))
+  var k = (Number(prompt()))
+  var sum = 0
+  var houseprice = 200
+  var buyed = false
+  for (var i = 1 ; i <= 20 ; i++ ) {
+      sum += N
+      if (sum >= houseprice) {
+        console.log(i)
+        break
+        buyed = true
+      }
+      houseprice = houseprice  * (1 + k / 100)
+  }
+  if (!buyed) {
+    console.log('Impossible')
+  }
 </script>
 
 <script id="ch0105/17">
@@ -649,58 +649,26 @@ if (!buyed) {
   var k = (( a - b ) / Math.sqrt(5)).toFixed(0)
   console.log(k)
 </script>
+
 <script id="ch0105/18">
+  debugger
   var n = (Number(prompt()))
   var a = (Number(prompt()))
   var b = (Number(prompt()))
-  var m = b / a
-  var c = 0
-  var d = 0
-  var e = 0
-  var h = 0
+  var radio = b / a
   for ( var i = 1 ; i < n ; i++ ) {
     var j = (Number(prompt()))
     var f = (Number(prompt()))
     var k = f / j
-    if (i == 1 ) {
-      var c = k
-    }else if (i == 2 ) {
-      var d = k
-    } else if (i == 3 ) {
-      var e = k
-    } else if (i == 4 ) {
-      var h = k
-      break;
+    if (k - radio > 0.05 ) {
+      console.log('better')
+    } else if ( radio - k > 0.05 ) {
+      console.log('worse')
+    } else {
+      console.log('same')
     }
   }
-  if (c - m >  (5 / 100) ) {
-    console.log('better')
-  } else if (m -c > (5 / 100) ) {
-    console.log('worse')
-  } else {
-    console.log('same')
-  }
-  if (d - m > (5 / 100) ) {
-    console.log('better')
-  } else if (m - d > (5 / 100) ) {
-    console.log('worse')
-  } else {
-    console.log('same')
-  }
-  if (e - m > (5 / 100) ) {
-    console.log('better')
-  } else if (m - e > (5 / 100) ) {
-    console.log('worse')
-  } else {
-    console.log('same')
-  }
-  if (h - m > (5 / 100) ) {
-    console.log('better')
-  } else if (m - h > (5 / 100) ) {
-    console.log('worse')
-  } else {
-    console.log('same')
-  }
+
 
 </script>
 <script id="ch0105/19">
@@ -715,84 +683,79 @@ if (!buyed) {
     var time = Math.ceil((distance / 50) * 2 + h)
     var artificial = artificial + time
   }
-  console.log (artificial)
+  console.log (Math.ceil(artificial))
 </script>
 
 <script id="ch0105/20">
+  debugger
   var h = (Number(prompt()))
-  var meter = h
+  var meter = 0
+  var m = h
   for (var i = 0 ; i < 10 ; i++) {
-     h /= 2
      meter = meter + h * 2
-     console.log(meter.toFixed(4))
-     console.log(h.toFixed(7))
+     h = h / 2
   }
+  console.log((meter-m).toFixed(4) , h.toFixed(7))
 </script>
 
 <script id="ch0105/21">
   debugger
   var N = (Number(prompt()))
+  var n = N
+  for  (var i = 0 ; i < n ; i++) {
+    var sum = N
   if (N % 2 !== 0) {
-    var a = N * 3 + 1
-    console.log(N +'*' + 3 + '+' + 1 + '=' +a)
-  } else {
-    var a = N / 2
-    console.log(N +'/' + 2 + '=' + a)
+    N = N * 3 + 1
+    console.log(sum +'*3+1='+N )
+  } else if(N % 2 == 0){
+    N = N / 2
+    console.log(sum +'/' + 2 + '=' + N)
   }
-
-  if (a % 2 !== 0) {
-    var b = a *3 + 1
-    console.log(a +'*' + 3 + '+' + 1 + '=' +b)
-  } else {
-    var b = a / 2
-    console.log(a +'/' + 2 + '=' + b)
-  }
-
-  if (b % 2 !== 0) {
-    var c = b *3 + 1
-    console.log(b +'*' + 3 + '+' + 1 + '=' +c)
-  } else {
-    var c = b / 2
-    console.log(b +'/' + 2 + '=' + c)
-  }
-
-  if (c % 2 !== 0) {
-    var d = c *3 + 1
-    console.log(c +'*' + 3 + '+' + 1 + '=' +d)
-  } else {
-    var d = c / 2
-    console.log(c +'/' + 2 + '=' + d)
-  }
-
-  if (d % 2 !== 0) {
-    var e = d *3 + 1
-    console.log(d +'*' + 3 + '+' + 1 + '=' +e)
-  } else {
-    var e = d / 2
-    console.log(d +'/' + 2 + '=' + e)
-  }
-
-  if (e = 1) {
+  if(N == 1) {
     console.log('End')
+    break
   }
+}
 </script>
-TODO
+
 <script id="ch0105/22">
+  debugger
+  var money = 0 //每个月月初的钱
+  var stock = 0
+  var 是否有某个月钱不够花 = false
+  for (var i = 1; i <= 12 ; i++) { //一共十二个月的循环
+      money += 300 //每个月月初都会加三百，成为开始的钱
+      var budget = Number(prompt()) //每个月的预算
+      money = money - budget // 月初的钱减去预算就是剩下的钱，用来判断能不能存
+      if (money < 0) { //即钱不够用的情况
+        console.log(-i) //直接在不够用钱的月份跳出
+        是否有某个月钱不够花 = true
+        break
+      }
+      if(money >= 100) {
+        var left = money % 100 //留下零头的钱
+        stock += money - left // 原有的钱减去零头的钱就是存起来的钱
+        money = left //剩下的钱和零头相等，用于下月初使用
+      }
+  }
+      if (!是否有某个月钱不够花) {
+            console.log(stock * 1.2 + money)
+        }
 </script>
 
 <script id="ch0105/23">
-var m = (Number(prompt()))
-var n = (Number(prompt()))
-var result = 0
-for (var i = 0 ; i < n ; i++) {
-   var k = (Number(prompt()))
-   if (k <= m) {
-    m = m - k
-   } else {
-    result = result + 1
-   }
-}
- console.log(result)
+  var m = (Number(prompt()))
+  var n = (Number(prompt()))
+  var result = 0
+  for (var i = 0 ; i < n ; i++) {
+    var k = (Number(prompt()))
+    if (k <= m) {
+      m = m - k
+    } else {
+      result = result + 1
+    }
+  }
+  console.log(result)
 </script>
 
 <script id="ch0105/24">
@@ -813,25 +776,40 @@ for (var i = 0 ; i < n ; i++) {
   }
   console.log(max)
 </script>
-TODO
+
 <script id="ch0105/25">
+ for (var i = 1; i <=999 ; i++) {
+   var a7 = i % 7 //7进制的个位数
+   var b7 = (i -a7) / 7 % 7     //7进制的七位数
+   var c7 = (i - a7 - b7 * 7) / 7 / 7 % 7   //7进制的四九位数
+
+   var a9 = i % 9 //九进制的个位数
+   var b9 = (i -a9) / 9 % 9     //7进制的七位数
+   var c9 = (i - a9 - b9 * 9) / 9 / 9 % 9   //7进制的四九位数
+
+   if (a7 = c9 && b7 == b9 && c7 == a9) {
+   console.log(i ,'' + c7 + b7 + a7 ,'' + c9 + b9 + a9)
+   break
+  }
+ }
 </script>
 
 <script id="ch0105/26">
-var n = (Number(prompt()))
-var result = 0
-for (var i = 0 ; i < n ; i++) {
-  var a = (Number(prompt()))
-  var 个位数 = a % 10
-  var 十位数 = parseInt(a / 10 % 10)
-  var 百位数 = parseInt(a / 100 % 10)
-  var 千位数 = parseInt(a / 1000)
-  var m = 个位数 - 千位数 - 百位数 - 十位数
-  if ( m > 0) {
-    result = result + 1
+  var n =  (Number(prompt()))
+  var count = 0
+  for (var i = 0 ; i < n ; i++) {
+    var a =  (Number(prompt()))
+    var 个位数 = a % 10
+    var 十位数 = (a - 个位数) / 10 % 10
+    var 百位数 = (a - 个位数 - 十位数 * 10) / 100 % 10
+    var 千位数 = (a - 个位数 - 十位数 * 10 - 百位数 * 100) / 1000 % 10
+    var result = 个位数 - 千位数 -百位数 - 十位数
+    if (result > 0) {
+      count++
+    }
   }
-}
-console.log(result)
+  console.log(count)
+
 </script>
 
 <script id="ch0105/27">
@@ -848,30 +826,78 @@ console.log(result)
 
 <script id="ch0105/28">
   var n = (Number(prompt()))
-  for (var i = 1 ; i <= 10 ; i++) {
-  var 个位数 = n % 10
-  var 十位数 = parseInt(n / 10 % 10)
-  var 百位数 = parseInt(n / 100 % 10)
+    while (n > 0 ) {
+    dight = n % 10
+    console.log(dight)
+    n = (n - dight) / 10
   }
-  console.log(个位数 , 十位数 , 百位数)
 </script>
 
 <script id="ch0105/29">
-var x = (Number(prompt()))
-var str = x.toString()
-console.log(str)
+   var n = (Number(prompt()))
+   var isNegative = false
+   var result = ''
+   if ( n < 0) {
+     n = -n
+     isNegative = true
+   }
+    do {          //当n=0 时至少先做一次运算 ，结果等于0时直接出来
+    dight = n % 10
+    result=result + dight
+    n = (n - dight) / 10
+  } while (n > 0)
+  if (isNegative) {
+    console.log('-' + result)
+  } else {
+    console.log(result)
+  }
 </script>
 
 <script id="ch0105/30">
+  debugger
+  var n = (Number(prompt()))
+  var k = (Number(prompt()))
+  var p = n
+  var result= 0
+  var sum = 0
+ for ( var i=1 ; i <=6 ; i++) {
+      var dight = n % 10
+      n = (n - dight) / 10
+      console.log(dight)
+      if (p % 19 == 0 && dight % 3 == 0 && dight!==0) {
+        sum++
+      }
+ }
+  if (sum == k ) {
+    console.log('YES')
+  } else {
+    console.log('N0')
+  }
 </script>
+TODO
 <script id="ch0105/31">
   var N = (Number(prompt()))
   var M = (Number(prompt()))
-  var result = 0
-  for (var i = 1 ; i <= M ; i++)
-   if (i = 1) {
-    result = 0
-   }
+  var result = ''
+  var isFirst = true
+  for (var i=1; i <= N ; i++) { //一共有多少栈灯
+    var 灯 = true //让灯处于开启的状态
+    for( var j = 1 ; j <= M && j <= i; j++ ) {//一共有多少人
+    if (i % j == 0) // i指多少栈灯
+      灯 = !灯 //让灯处于翻转的状态
+    }
+    if (!灯) {
+      if (isFirst) {
+        result += i
+      } else {
+        result += ',' + i
+      }
+      isFirst = false
+    }
+  }
+  console.log(result)
+
+
 </script>
 <script id="ch0105/32">
 var n = (Number(prompt()))
@@ -941,51 +967,257 @@ console.log(result.toFixed(2))
 </script>
 
 <script id="ch0105/37">
-var M = (Number(prompt()))
-var N = (Number(prompt()))
-var X = (Number(prompt()))
-var n = N
-N1 = M / n + N
-result += N1
-if (x * N1 > M )
- x = M / N1
- a = x - x1
 </script>
 
 <script id="ch0105/38">
+  var m = (Number(prompt()))
+  for (var i = 0 ; i < m ; i++) {
+    var n =  (Number(prompt()))
+    if (n == 0) {
+    var c = (Number(prompt()))
+    console.log(0)
+  } else {
+    for (var j = n; j >= 0; j--) {
+      var c = (Number(prompt()))
+      console.log( c*j )
+    }
+  }
+}
 </script>
 <script id="ch0105/39">
+  debugger
+  var n = (Number(prompt()))
+  var result = 0
+  for(var i = 1 ; i < n ; i++) {
+    var flag =false//先假设i与7无关
+    if (i % 7 == 0) {
+      flag = true
+    } else {
+      var m = i
+      while (m > 0 ) {
+      dight = m % 10
+      if (dight === 7) {
+      flag = true
+      break
+      }
+      m = (m - dight) / 10
+      }
+    }
+    if (!flag) {
+      result += i*i
+    }
+  }
+  console.log(result)
 </script>
 
 <script id="ch0105/40">
-  var n = (Number(prompt()))
+  debugger
+  var n =(Number(prompt()))
   var result = 0
-  var sum = 2
   for (var i = 1 ; i <= n ; i++) {
-    var result = i
+  var m = i
+  while (m > 0 ) {
+    dight = m % 10
+    if (dight / 1 == 1) {
+      result++
+    }
+    m = (m - dight) / 10
   }
-  console.log(sum)
+}
+console.log(result)
+
 </script>
 
 <script id="ch0105/41">
   debugger
   var L = (Number(prompt()))
   var R = (Number(prompt()))
-  var sum = 0
+  var result = 0
   for (var i = L ; i <= R ; i++) {
-    var result = i
-    if (result % 2 == 0) {
-      sum += 1
+    var m = i
+    while (m > 0 ) {
+      dight = m % 10
+      if (dight / 2 == 1) {
+        result++
+      }
+      m = (m - dight) / 10
     }
   }
-  console.log(sum)
+  console.log(result)
 </script>
 
 <script id="ch0105/42">
-var a = (Number(prompt()))
-var b = (Number(prompt()))
+var h = (Number(prompt()))
+var w = (Number(prompt()))
+var char = prompt()
+var fill = (Number(prompt()))
+var str = ''
+for (var i = 0; i < h; i++) {
+  for (var j = 0; j < w; j++) {
+    if (i == 0 || j == 0 || i == h - 1 || j == w -1) {
+      str += char
+    } else {
+      if (fill) {
+        str += char
+      } else {
+        str += ' '
+      }
+    }
+  }
+  if ( i < h -1 ) {
+    str += '\n'
+  }
+}
+console.log(str)
+</script>
+
+<script id="ch0105/43">
+  var n = (Number(prompt()))
+  for (var i = 2; ; i++) {
+    if ( n % i == 0) {
+      console.log( n / i )
+      break
+    }
+  }
+</script>
+
+<script id="ch0105/44">
+ var n = (Number(prompt()))
+ var count = 0
+  for (var i = 2; ; i++) {
+    var iIsprime = true //先假设i是素数，然后从2到i-1寻找i的因子，如果找到了i就不是素数,并跳出
+    for (var j = 2; j <= i / 2; j++) {
+      if ( i % j == 0) {
+        iIsprime = false
+        break
+      }
+    }
+    if (iIsprime) {
+      count++
+      if ( count == n) {
+        console.log(i)
+        break
+      }
+    }
+  }
+</script>
+
+<script id="ch0105/45">
+debugger
+  var n = (Number(prompt()))
+  var sum = 0
+  var 面额 = 1
+  var 天数 = 1
+  var 当前面额已收天数 = 0
+  for (var i = 1; i<= n; i++ ) {
+    sum+= 面额
+    当前面额已收天数++
+    if (当前面额已收天数 == 天数) {
+      面额++
+      天数++
+      当前面额已收天数 = 0
+    }
+  }
+  console.log(sum)
 
 </script>
+
+<script id="narcissistic">
+  debugger
+  var n = (Number(prompt()))
+  if (n > 100 && n < 1000) {
+  var a =  n % 10
+  var b = (n -a) / 10 % 10
+  var c = (n - a - b * 10) / 10 / 10 % 10
+  var d = a * a * a + b * b * b + c * c * c
+    if (d == n) {
+      console.log(true)
+    } else {
+      console.log(false)
+    }
+  } else {
+    console.log(false)
+  }
+</script>
+
+<script id="narcissistics">
+  for (var n = 0 ; n < 10000; n ++) {
+  if (n > 100 && n < 1000) {
+  var a =  n % 10
+  var b = (n -a) / 10 % 10
+  var c = (n - a - b * 10) / 10 / 10 % 10
+  var d = a * a * a + b * b * b + c * c * c
+    if (d == n) {
+      console.log(d)
+    }
+  }
+  while (n >= 1000) {
+    break
+  }
+}
+</script>
+
+<script id="palindrom">
+  debugger
+  var n = (Number(prompt()))
+  var m = n
+  var result = 0
+    while (n > 0 ) {
+    dight = m % 10
+    result =result*10+ dight
+    m = (m - dight) / 10
+    if (result == n ) {
+      console.log(true)
+      break
+    }
+  }
+  if (result !== n ) {
+    console.log(false)
+  }
+</script>
+
+<script id="weekday">
+  var y = (Number(prompt()))
+  var m = (Number(prompt()))
+  var d = 1
+  var weekday
+  while ( m >=1 && m <= 12) {
+    weekday = (d+2*m+3*(m+1)/5+y+y/4-y/100+y/400)%7
+    var b = Math.floor(weekday)
+    if( b == 0) {
+      console.log('星期一')
+      break
+    }
+    if( b == 1) {
+      console.log('星期二')
+      break
+    }
+    if( b == 2) {
+      console.log('星期三')
+      break
+    }
+    if( b == 3) {
+      console.log('星期四')
+      break
+    }
+    if( b == 4) {
+      console.log('星期五')
+      break
+    }
+    if( b == 5) {
+      console.log('星期六')
+      break
+    }
+    if( b == 6) {
+      console.log('星期日')
+      break
+    }
+  }
+</script>
+
+<script id="complete-number">
+</script>
+
 
 
 
