@@ -40,7 +40,7 @@
       * 画两个个空心的圆，居中：
         * 一个半径为50像素
         * 一个半径为200像素
-      * 画一个实心的圆，半径至少为100像素
+      * 画一的圆，半径至少为100像素个实心
       * 画一个【大小合适】的sin(x)的图像
 
       * 画出rgb色彩空间的某一面（尺寸要大于100x100）
@@ -85,12 +85,12 @@ for (var x = 0; x < 100 ; x+=1) {
   dot(x , y , 'black')
 }
 for (var x = 0; x < 70 ; x++) {
-  dot(y = x /(Math.sqrt(3) / 3) )
+  y = x /(Math.sqrt(3))
   dot(x , y , 'red')
 }
 
 for (var x = 0; x < 70 ; x++) {
-  dot(y = x /(Math.sqrt(3) / 3) )
+  y = x / (Math.sqrt(3)  / 3)
   dot(x , y , 'red')
 }
 for (var x = 0; x < 700 ; x++) {
@@ -113,4 +113,25 @@ for (var x = 10; x <= 50; x++) {
 
 
 </script>
+<script>
+  function rgb( r ,g , b) {
+    return
+  }
+  var color = rgb (x /100 * 256, y / 100 * 256 ,255)
+</script>
+</script>
 </html>
+
+<script>
+var findMaxConsecutiveOnes = function(nums) {
+    var nums = [1,2,2,3,4]
+    var n = nums.length
+    var sum = 0
+    for (var i = 0 ; i< n ; i++) {
+        var p = nums.pop(2)
+        if (p / 1 == 1) {
+            sum++
+        }
+      }
+}
+</script>
