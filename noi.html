@@ -467,12 +467,13 @@
 <script id="ch0105/04">
   var n = Number(prompt())
   var result = 0
-  for ( var counter = 0; counter < n ; counter = counter + 1 ) {
-      result=result + Number(prompt())
-      console.log(result)
-      average=(result / n).toFixed(5)
-    }
-      console.log(average)
+  for ( var i = 0; i < n ; i++) {
+    var b = Number(prompt())
+    result += b
+  }
+  console.log(result)
+  var average = ( result / n ).toFixed(5)
+  console.log(average)
 </script>
 
 <script id="ch0105/05">
@@ -784,7 +785,6 @@ if (!buyed) {
 </script>
 
 <script id="ch0105/25">
- debugger
   for (var i = i; i <=999 ; i++) {
     var a7 = i % 7 //7进制的个位数
     var b7 = (i -a7) / 7 % 7     //7进制的七位数
@@ -795,7 +795,7 @@ if (!buyed) {
     var c9 = (i - a9 - b9 * 9) / 9 / 9 % 9   //九进制的四九位数
 
     if (a7 == c9 && b7 == b9 && c7 == a9) {
-    console.log(i ,'' + c7 + b7 + a7 ,'' + c9 + b9 + a9)
+    console.log(i ,c7 * 100 + b7 * 10 + a7  , c9 * 100 + b9 * 10 + a9)
     break
   }
  }
@@ -844,19 +844,19 @@ if (!buyed) {
   debugger
    var n = (Number(prompt()))
    var isNegative = false
-   var result = ''
+   var result = 0
    if ( n < 0) {
      n = -n
      isNegative = true
    }
     do {          //当n=0 时至少先做一次运算 ，结果等于0时直接出来
     dight = n % 10
-    result=result + dight
+    result=result * 10 + dight
     n = (n - dight) / 10
   } while (n > 0)
 
   if (isNegative) {
-    console.log('-' + result)
+    console.log(-result)
   } else {
     console.log(result)
   }
@@ -1148,10 +1148,11 @@ debugger
       m = (m - digit) / 10
     }
     if (sum == n) {
-      return 'YES'
+      console.log('YES')
     } else {
-      return 'NO'
+      console.log('NO')
     }
+    return
   }
 </script>
 
@@ -1182,9 +1183,10 @@ debugger
   m = (m - dight) / 10
   }
   if ( reverse == n ) {
-    return 'YES'
+    console.log('YES')
   }
-  return 'NO'
+   console.log('NO')
+   return
 }
 </script>
 
@@ -1240,7 +1242,12 @@ debugger
     if (stop == Math.trunc(stop)) {
       sum += stop
     }
-    return sum == n
+    if ( sum == n) {
+      console.log('YES')
+    } else {
+      console.log('NO')
+    }
+    return
   }
 </script>
 
@@ -1260,7 +1267,7 @@ debugger
   return sum == n
   }
 
-  for (var i = 1; i < 10000 ;i++) {
+  for (var i = 1; i < 1000 ;i++) {
     if (isCompletenumber(i)) {
       console.log(i)
     }
@@ -1271,10 +1278,11 @@ debugger
 function isPrime(n) {
   for (var i = 2; i * i< n; i++) {
     if (n % i == 0) {
-      return 'N0'
+      console.log('N0')
     }
   }
-  return 'YES'
+  console.log('YES')
+  return
 }
 </script>
 
