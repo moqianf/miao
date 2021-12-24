@@ -785,7 +785,7 @@ if (!buyed) {
 </script>
 
 <script id="ch0105/25">
-  for (var i = i; i <=999 ; i++) {
+  for (var i = 1; i <=999 ; i++) {
     var a7 = i % 7 //7进制的个位数
     var b7 = (i -a7) / 7 % 7     //7进制的七位数
     var c7 = (i - a7 - b7 * 7) / 7 / 7 % 7   //7进制的四九位数
@@ -1132,7 +1132,7 @@ debugger
 </script>
 
 <script id="narcissistic">
-  function isNarcissistics(n) {
+   var n = Number(prompt())
     var digitwidth = 0
     var m = n
     while ( m > 0) {
@@ -1152,8 +1152,7 @@ debugger
     } else {
       console.log('NO')
     }
-    return
-  }
+
 </script>
 
 <script id="narcissistics">
@@ -1174,7 +1173,7 @@ debugger
 </script>
 
 <script id="palindrom">
-  function isPalindrom(n) {
+  var n = Number(prompt())
   var m = n
   var reverse = 0
   while (m > 0 ) {
@@ -1186,8 +1185,6 @@ debugger
     console.log('YES')
   }
    console.log('NO')
-   return
-}
 </script>
 
 <script id="weekday">
@@ -1230,7 +1227,7 @@ debugger
 </script>
 
 <script id="complete-number">
-  function isCompletenumber(n) {
+   var n = Number(prompt())
     var sum = 1
     var stop = Math.sqrt(n)
     for (var i = 2; i < stop; i++) {
@@ -1247,12 +1244,10 @@ debugger
     } else {
       console.log('NO')
     }
-    return
-  }
 </script>
 
 <script id="complete-numbers">
-  function isCompletenumber(n) {
+  var n = Number(prompt())
   var sum = 1
   var stop = Math.sqrt(n)
   for (var i = 2; i < stop; i++) {
@@ -1264,8 +1259,6 @@ debugger
   if (stop == Math.trunc(stop)) {
     sum += stop
   }
-  return sum == n
-  }
 
   for (var i = 1; i < 1000 ;i++) {
     if (isCompletenumber(i)) {
@@ -1275,15 +1268,13 @@ debugger
 </script>
 
 <script id="prime">
-function isPrime(n) {
+var n = Number(prompt())
   for (var i = 2; i * i< n; i++) {
     if (n % i == 0) {
       console.log('N0')
     }
   }
   console.log('YES')
-  return
-}
 </script>
 
 <script id="primes">
@@ -1303,7 +1294,7 @@ function isPrime(n) {
 </script>
 
 <script id="itoa">
-   function itoa(n) {
+     var n = Number(prompt())
      var result = ''
      while (n > 0) {
        var d = n % 10
@@ -1339,8 +1330,7 @@ function isPrime(n) {
        }
        n = (n - d) / 10
      }
-     return result
-   }
+     console.log(result)
 </script>
 
 <script id="lcf&lcm">
