@@ -118,7 +118,7 @@ var moqianf = {
   },
 
   head: function head(array) {
-    for (var i = 0; i < array.length; i++){
+    for (var i = 0; i < array.length; i++) {
       return array[0]
     }
   },
@@ -174,15 +174,19 @@ var moqianf = {
 
   lastIndexOf: function lastIndexOf(array, value, fromIndex) {
     if (fromIndex == undefined) {
-      fromIndex = array.length-1
+      fromIndex = array.length - 1
     }
+    var a = fromIndex
     while (fromIndex < 0) {
       fromIndex = Math.abs(fromIndex)
-      for (var i = fromIndex; i < array.length ; i++) {
+      for (var i = fromIndex; i < array.length; i++) {
         if (array[i] == value) {
           return i
         }
       }
+    }
+    if (a < 0) {
+      return -1
     }
     for (var i = fromIndex; i >= 0; i--) {
       if (array[i] == value) {
@@ -190,8 +194,41 @@ var moqianf = {
       }
     }
     return -1
-  }
+  },
 
+  pull: function pull(array, ...values) {
+    for (var i = 0; i < array.length; i++) { }
+
+
+  },
+
+  reverse: function reverse(array) {
+    var newarray = []
+    for (var i = array.length - 1; i >= 0; i--) {
+      newarray.push(array[i])
+    }
+    return newarray
+  },
+
+  sortedIndex: function sortedIndex(array, value) {
+
+  },
+
+  union: function union() {
+
+  },
+
+  unionBy: function unionBy() {
+
+  },
+
+  uniq: function uniq(array) {
+    for (var i = 0; i < array.length; i++) {
+      if (array[i]) {
+        array[i]
+       }
+    }
+  }
 
 
 
