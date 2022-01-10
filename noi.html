@@ -1385,5 +1385,34 @@ function isSqrt(n) {
 }
 </script>
 
+<script>
+function findSolution(targetX , targetY) {
+  var a = []
+  function find(x , y ,history) {
+  if (x == targetX && y == targetY) {
+    a.push(history)
+    return
+  }
+  if (x > targetX || y > targetY) {
+    return
+  }
+  find (x +1 ,y, history + '>')
+  find (x , y + 1,  history +'^')
+}
+  find( 0,0 ,'')
+  return a
+}
+function isEven(number) {
+    if (number < 1) {
+      return false
+    }
+    if (number % 2 == 0) {
+      return true
+    }
+    if (number % 2 == 1) {
+      return false
+    }
+     isEven(number - 2)
+  }
 
-
+ </script>
