@@ -2,23 +2,22 @@ var moqianf = {
   chunk: function chunk(array, size) {
     var newarray = []
     var ary = []
-      var p = array.length
-      var n = p / size >> 0
     for (var i = 0; i < array.length; i++) {
+      var n = i + 1
       ary.push(array[i])
-        if (((i + 1) % n) === 0) {
-          newarray.push(ary)
-          ary = []
-        }
+      if (n % size == 0 || i == array.length - 1) {
+        newarray.push(ary)
+        ary = []
       }
-      return newarray
+    }
+    return newarray
   },
 
   compact: function compact(array) {
     var ary = []
     array.forEach(item => {
       if (item) {
-         ary.push(item)
+        ary.push(item)
       }
     })
     return ary
@@ -45,14 +44,14 @@ var moqianf = {
 
   },
 
-  drop: function drop(array , n) {
+  drop: function drop(array, n) {
     var newarray = []
     if (n == undefined) {
       n = 1
     }
     for (var i = 0; i < array.length; i++) {
       newarray.push(array[i])
-      if (i+1 <= n) {
+      if (i + 1 <= n) {
         newarray = []
       }
     }
@@ -64,7 +63,7 @@ var moqianf = {
       n = 1
     }
     var newarray = []
-    for (var i = 0; i < array.length-n; i++) {
+    for (var i = 0; i < array.length - n; i++) {
       newarray.push(array[i])
     }
 
@@ -88,10 +87,109 @@ var moqianf = {
     }
     for (var i = 0; i < array.length; i++) {
       if (i >= start && i < end) {
-        array[i] =value
+        array[i] = value
       }
     }
-   return array
+    return array
+  },
+
+  findIndex: function findIndex() {
+
+  },
+
+  findLastIndex: function findLastIndex() {
+
+  },
+
+  flatten: function flatten() {
+
+  },
+
+  flattenDeep: function flattenDeep() {
+
+  },
+
+  flattenDepth: function flattenDepth() {
+
+  },
+
+  fromPairs: function fromPairs() {
+
+  },
+
+  head: function head(array) {
+    for (var i = 0; i < array.length; i++){
+      return array[0]
+    }
+  },
+
+  indexOf: function indexOf(array, value, fromIndex) {
+    if (fromIndex == undefined) {
+      fromIndex = 0
+    }
+    while (fromIndex < 0) {
+      fromIndex = array.length + fromIndex
+      for (var i = fromIndex; i >= 0; i--) {
+        if (array[i] == value) {
+          return i
+        }
+      }
+    }
+    for (var i = fromIndex; i < array.length; i++) {
+      if (array[i] == value) {
+        return i
+      }
+    }
+    return -1
+  },
+
+  initial: function initial(array) {
+    var n = array.length - 1
+    var a = array.slice(0, n)
+    return a
+  },
+
+  intersection: function intersection(...Array) {
+    var newarray = []
+
+  },
+
+  join: function join(array, separator) {
+    var string = ''
+    for (var i = 0; i < array.length; i++) {
+      if (i === array.length - 1) {
+        string = string + array[i]
+        return string
+      }
+      string = string + array[i] + separator
+    }
+  },
+
+  last: function last(array) {
+    for (var i = 0; i < array.length; i++) {
+      var a = array[i]
+    }
+    return a
+  },
+
+  lastIndexOf: function lastIndexOf(array, value, fromIndex) {
+    if (fromIndex == undefined) {
+      fromIndex = array.length-1
+    }
+    while (fromIndex < 0) {
+      fromIndex = Math.abs(fromIndex)
+      for (var i = fromIndex; i < array.length ; i++) {
+        if (array[i] == value) {
+          return i
+        }
+      }
+    }
+    for (var i = fromIndex; i >= 0; i--) {
+      if (array[i] == value) {
+        return i
+      }
+    }
+    return -1
   }
 
 
@@ -109,10 +207,15 @@ var moqianf = {
 
 
 
-
-
-
 }
+
+
+
+
+
+
+
+
 
 
 
